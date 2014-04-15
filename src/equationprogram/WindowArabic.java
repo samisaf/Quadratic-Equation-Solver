@@ -58,7 +58,7 @@ public class WindowArabic extends javax.swing.JFrame {
         jTextRoot2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("برنامج حل المعادلات الشهير من سامي صفدي");
+        setTitle("برنامج حل المعادلات من الدرجة الثانية");
         setResizable(false);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
