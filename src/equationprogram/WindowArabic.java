@@ -28,136 +28,93 @@ public class WindowArabic extends javax.swing.JFrame {
         jPanelInfo = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jPanelInput = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextA = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jTextB = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jTextC = new javax.swing.JTextField();
-        jPanelSolve = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextB = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTextA = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         jPanelButtons = new javax.swing.JPanel();
-        jButtonSolve = new javax.swing.JButton();
-        jButtonAbout = new javax.swing.JButton();
         jButtonExit = new javax.swing.JButton();
-        jPanelDraw = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextX1 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTextX2 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jTextY1 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jTextY2 = new javax.swing.JTextField();
+        jButtonAbout = new javax.swing.JButton();
         jButtonDraw = new javax.swing.JButton();
+        jButtonSolve = new javax.swing.JButton();
+        jPanelDraw = new javax.swing.JPanel();
+        jTextY2 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jTextY1 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jTextX2 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jTextX1 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
         jPanelOutput = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
         jTextEqType = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jTextRoot1 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jTextRoot2 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jTextRoot1 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("برنامج حل المعادلات من الدرجة الثانية");
-        setResizable(false);
+        setTitle("برنامج حل المعادلات الشهير من سامي صفدي");
+        setMaximumSize(null);
+        setPreferredSize(new java.awt.Dimension(500, 500));
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.PAGE_AXIS));
+
+        jPanelInfo.setMaximumSize(new java.awt.Dimension(1000, 1000));
+        jPanelInfo.setMinimumSize(null);
+        jPanelInfo.setPreferredSize(null);
+        jPanelInfo.setLayout(new java.awt.CardLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("المعادلة من الدرجة الثانية ولها الشكل أ س2 + ب س + ج = 0");
+        jPanelInfo.add(jLabel4, "card2");
 
-        org.jdesktop.layout.GroupLayout jPanelInfoLayout = new org.jdesktop.layout.GroupLayout(jPanelInfo);
-        jPanelInfo.setLayout(jPanelInfoLayout);
-        jPanelInfoLayout.setHorizontalGroup(
-            jPanelInfoLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
-        );
-        jPanelInfoLayout.setVerticalGroup(
-            jPanelInfoLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanelInfo);
 
-        jPanelInput.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jPanelInput.setMaximumSize(new java.awt.Dimension(1000, 1000));
+        jPanelInput.setMinimumSize(null);
+        jPanelInput.setPreferredSize(null);
+        jPanelInput.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setText("أدخل قيمة أ");
-        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-
-        jTextA.setNextFocusableComponent(jTextB);
-
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("أدخل قيمة ب");
-        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-
-        jTextB.setNextFocusableComponent(jTextC);
+        jTextC.setMinimumSize(new java.awt.Dimension(50, 19));
+        jTextC.setNextFocusableComponent(jButtonSolve);
+        jTextC.setPreferredSize(new java.awt.Dimension(100, 20));
+        jPanelInput.add(jTextC, new java.awt.GridBagConstraints());
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("أدخل قيمة ج");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jPanelInput.add(jLabel3, new java.awt.GridBagConstraints());
 
-        jTextC.setNextFocusableComponent(jButtonSolve);
+        jTextB.setMinimumSize(new java.awt.Dimension(50, 19));
+        jTextB.setNextFocusableComponent(jTextC);
+        jTextB.setPreferredSize(new java.awt.Dimension(100, 20));
+        jPanelInput.add(jTextB, new java.awt.GridBagConstraints());
 
-        org.jdesktop.layout.GroupLayout jPanelInputLayout = new org.jdesktop.layout.GroupLayout(jPanelInput);
-        jPanelInput.setLayout(jPanelInputLayout);
-        jPanelInputLayout.setHorizontalGroup(
-            jPanelInputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanelInputLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanelInputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextA, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextB, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextC, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelInputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel1)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel2)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel3))
-                .addContainerGap())
-        );
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("أدخل قيمة ب");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jPanelInput.add(jLabel2, new java.awt.GridBagConstraints());
 
-        jPanelInputLayout.linkSize(new java.awt.Component[] {jLabel1, jLabel2, jLabel3}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+        jTextA.setMinimumSize(new java.awt.Dimension(50, 19));
+        jTextA.setNextFocusableComponent(jTextB);
+        jTextA.setPreferredSize(new java.awt.Dimension(100, 20));
+        jPanelInput.add(jTextA, new java.awt.GridBagConstraints());
 
-        jPanelInputLayout.setVerticalGroup(
-            jPanelInputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanelInputLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanelInputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel1)
-                    .add(jTextA, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelInputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel2)
-                    .add(jTextB, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelInputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel3)
-                    .add(jTextC, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("أدخل قيمة أ");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jPanelInput.add(jLabel1, new java.awt.GridBagConstraints());
 
-        jPanelSolve.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        getContentPane().add(jPanelInput);
 
-        jPanelButtons.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        jPanelButtons.setLayout(new java.awt.GridLayout(0, 1, 0, 5));
-
-        jButtonSolve.setText("حل المعادلة");
-        jButtonSolve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonSolve.setNextFocusableComponent(jTextX1);
-        jButtonSolve.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SolveEquation(evt);
-            }
-        });
-        jPanelButtons.add(jButtonSolve);
-
-        jButtonAbout.setText("عن المؤلف");
-        jButtonAbout.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButtonAbout.setNextFocusableComponent(jButtonExit);
-        jButtonAbout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ShowAbout(evt);
-            }
-        });
-        jPanelButtons.add(jButtonAbout);
+        jPanelButtons.setMaximumSize(new java.awt.Dimension(1000, 1000));
+        jPanelButtons.setMinimumSize(null);
+        jPanelButtons.setPreferredSize(null);
+        jPanelButtons.setLayout(new java.awt.GridBagLayout());
 
         jButtonExit.setText("خروج");
         jButtonExit.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -167,35 +124,17 @@ public class WindowArabic extends javax.swing.JFrame {
                 Exit(evt);
             }
         });
-        jPanelButtons.add(jButtonExit);
+        jPanelButtons.add(jButtonExit, new java.awt.GridBagConstraints());
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel5.setText("على المحور x من");
-
-        jTextX1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextX1.setText("-100");
-        jTextX1.setNextFocusableComponent(jTextX2);
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("إلى");
-
-        jTextX2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextX2.setText("+100");
-        jTextX2.setNextFocusableComponent(jTextY1);
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel7.setText("على المحور y من");
-
-        jTextY1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextY1.setText("-100");
-        jTextY1.setNextFocusableComponent(jTextY2);
-
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("إلى");
-
-        jTextY2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextY2.setText("+100");
-        jTextY2.setNextFocusableComponent(jButtonDraw);
+        jButtonAbout.setText("عن المؤلف");
+        jButtonAbout.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonAbout.setNextFocusableComponent(jButtonExit);
+        jButtonAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ShowAbout(evt);
+            }
+        });
+        jPanelButtons.add(jButtonAbout, new java.awt.GridBagConstraints());
 
         jButtonDraw.setText("رسم الخط البياني للتابع الموافق");
         jButtonDraw.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -205,159 +144,100 @@ public class WindowArabic extends javax.swing.JFrame {
                 PlotFunction(evt);
             }
         });
+        jPanelButtons.add(jButtonDraw, new java.awt.GridBagConstraints());
 
-        org.jdesktop.layout.GroupLayout jPanelDrawLayout = new org.jdesktop.layout.GroupLayout(jPanelDraw);
-        jPanelDraw.setLayout(jPanelDrawLayout);
-        jPanelDrawLayout.setHorizontalGroup(
-            jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanelDrawLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jButtonDraw, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
-                    .add(jPanelDrawLayout.createSequentialGroup()
-                        .add(jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextX2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextY2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jLabel8)
-                            .add(jLabel6))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextX1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextY1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel5)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel7))))
-                .addContainerGap())
-        );
+        jButtonSolve.setText("حل المعادلة");
+        jButtonSolve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonSolve.setNextFocusableComponent(jTextX1);
+        jButtonSolve.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SolveEquation(evt);
+            }
+        });
+        jPanelButtons.add(jButtonSolve, new java.awt.GridBagConstraints());
 
-        jPanelDrawLayout.linkSize(new java.awt.Component[] {jLabel5, jLabel7}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+        getContentPane().add(jPanelButtons);
 
-        jPanelDrawLayout.linkSize(new java.awt.Component[] {jLabel6, jLabel8}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
+        jPanelDraw.setMaximumSize(new java.awt.Dimension(1000, 1000));
+        jPanelDraw.setMinimumSize(null);
+        jPanelDraw.setPreferredSize(null);
+        jPanelDraw.setLayout(new java.awt.GridBagLayout());
 
-        jPanelDrawLayout.setVerticalGroup(
-            jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanelDrawLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel5)
-                    .add(jLabel6)
-                    .add(jTextX2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jTextX1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelDrawLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel7)
-                    .add(jTextY1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jLabel8)
-                    .add(jTextY2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 19, Short.MAX_VALUE)
-                .add(jButtonDraw)
-                .addContainerGap())
-        );
+        jTextY2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextY2.setText("+100");
+        jTextY2.setNextFocusableComponent(jButtonDraw);
+        jTextY2.setPreferredSize(new java.awt.Dimension(50, 19));
+        jPanelDraw.add(jTextY2, new java.awt.GridBagConstraints());
 
-        org.jdesktop.layout.GroupLayout jPanelSolveLayout = new org.jdesktop.layout.GroupLayout(jPanelSolve);
-        jPanelSolve.setLayout(jPanelSolveLayout);
-        jPanelSolveLayout.setHorizontalGroup(
-            jPanelSolveLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanelSolveLayout.createSequentialGroup()
-                .add(jPanelDraw, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelButtons, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE))
-        );
-        jPanelSolveLayout.setVerticalGroup(
-            jPanelSolveLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanelDraw, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-            .add(jPanelButtons, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 110, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-        );
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("إلى");
+        jPanelDraw.add(jLabel8, new java.awt.GridBagConstraints());
 
-        jPanelSolveLayout.linkSize(new java.awt.Component[] {jPanelButtons, jPanelDraw}, org.jdesktop.layout.GroupLayout.VERTICAL);
+        jTextY1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextY1.setText("-100");
+        jTextY1.setNextFocusableComponent(jTextY2);
+        jTextY1.setPreferredSize(new java.awt.Dimension(50, 19));
+        jPanelDraw.add(jTextY1, new java.awt.GridBagConstraints());
 
-        jPanelOutput.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel7.setText("على المحور y من");
+        jPanelDraw.add(jLabel7, new java.awt.GridBagConstraints());
+
+        jTextX2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextX2.setText("+100");
+        jTextX2.setNextFocusableComponent(jTextY1);
+        jTextX2.setPreferredSize(new java.awt.Dimension(50, 19));
+        jPanelDraw.add(jTextX2, new java.awt.GridBagConstraints());
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("إلى");
+        jPanelDraw.add(jLabel6, new java.awt.GridBagConstraints());
+
+        jTextX1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextX1.setText("-100");
+        jTextX1.setNextFocusableComponent(jTextX2);
+        jTextX1.setPreferredSize(new java.awt.Dimension(50, 19));
+        jPanelDraw.add(jTextX1, new java.awt.GridBagConstraints());
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel5.setText("على المحور x من");
+        jPanelDraw.add(jLabel5, new java.awt.GridBagConstraints());
+
+        getContentPane().add(jPanelDraw);
+
+        jPanelOutput.setMaximumSize(new java.awt.Dimension(1000, 1000));
+        jPanelOutput.setMinimumSize(null);
+        jPanelOutput.setPreferredSize(null);
+        jPanelOutput.setLayout(new java.awt.GridBagLayout());
+
+        jTextEqType.setEditable(false);
+        jTextEqType.setPreferredSize(new java.awt.Dimension(70, 19));
+        jPanelOutput.add(jTextEqType, new java.awt.GridBagConstraints());
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText("نوع المعادلة");
         jLabel9.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jPanelOutput.add(jLabel9, new java.awt.GridBagConstraints());
 
-        jTextEqType.setEditable(false);
-
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel10.setText("الجذر الأول");
-        jLabel10.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-
-        jTextRoot1.setEditable(false);
+        jTextRoot2.setEditable(false);
+        jTextRoot2.setPreferredSize(new java.awt.Dimension(70, 19));
+        jPanelOutput.add(jTextRoot2, new java.awt.GridBagConstraints());
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel11.setText("الجذر الثاني");
         jLabel11.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jPanelOutput.add(jLabel11, new java.awt.GridBagConstraints());
 
-        jTextRoot2.setEditable(false);
+        jTextRoot1.setEditable(false);
+        jTextRoot1.setPreferredSize(new java.awt.Dimension(70, 19));
+        jPanelOutput.add(jTextRoot1, new java.awt.GridBagConstraints());
 
-        org.jdesktop.layout.GroupLayout jPanelOutputLayout = new org.jdesktop.layout.GroupLayout(jPanelOutput);
-        jPanelOutput.setLayout(jPanelOutputLayout);
-        jPanelOutputLayout.setHorizontalGroup(
-            jPanelOutputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanelOutputLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanelOutputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextEqType, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextRoot1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jTextRoot2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelOutputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel9)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel10)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jLabel11))
-                .addContainerGap())
-        );
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("الجذر الأول");
+        jLabel10.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jPanelOutput.add(jLabel10, new java.awt.GridBagConstraints());
 
-        jPanelOutputLayout.linkSize(new java.awt.Component[] {jLabel10, jLabel11, jLabel9}, org.jdesktop.layout.GroupLayout.HORIZONTAL);
-
-        jPanelOutputLayout.setVerticalGroup(
-            jPanelOutputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanelOutputLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanelOutputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel9)
-                    .add(jTextEqType, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelOutputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel10)
-                    .add(jTextRoot1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelOutputLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel11)
-                    .add(jTextRoot2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanelSolve, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(jPanelInput, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanelInfo, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(jPanelOutput, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanelInfo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelInput, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelSolve, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanelOutput, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanelOutput);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -439,7 +319,6 @@ public class WindowArabic extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelInfo;
     private javax.swing.JPanel jPanelInput;
     private javax.swing.JPanel jPanelOutput;
-    private javax.swing.JPanel jPanelSolve;
     private javax.swing.JTextField jTextA;
     private javax.swing.JTextField jTextB;
     private javax.swing.JTextField jTextC;
